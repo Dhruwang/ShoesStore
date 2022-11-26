@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+}
+body{
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -27,7 +29,9 @@
 .App-link {
   color: #61dafb;
 }
-
+h1{
+  font-family: 'Anton', sans-serif;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
