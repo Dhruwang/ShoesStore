@@ -1,7 +1,7 @@
-.App {
-}
+
 body{
   overflow-x: hidden;
+  padding: 0%;
 }
 
 .App-logo {
@@ -29,7 +29,7 @@ body{
 .App-link {
   color: #61dafb;
 }
-h1{
+h1,h2{
   font-family: 'Anton', sans-serif;
 }
 @keyframes App-logo-spin {
@@ -39,4 +39,14 @@ h1{
   to {
     transform: rotate(360deg);
   }
+}
+.reveal{
+  position: relative;
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.reveal.active{
+  transform: translateX(0);
+  opacity: 1;
 }
