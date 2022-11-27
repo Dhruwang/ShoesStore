@@ -44,7 +44,7 @@ export default function Buy(props) {
         },
         {
             title: "AirMax 97",
-            brand: "Niek",
+            brand: "Nike",
             imgUrl: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/aa5164d2-7cb2-488e-85bd-1d1d677dbf9e/air-max-97-premium-mens-shoes-ztThsC.png",
             price: "12,000",
             category:"running"
@@ -76,6 +76,27 @@ export default function Buy(props) {
             imgUrl:"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQWyN0RwZZPzV4whTDNifrmekQB5tNPi-BsQRhufMw4-shC4qGmsGYMOVyxKgFnZWIwDRArtmMWYHVPBv29NIlytm45uQ3elfAiKu0CQigSSlXovCO1IZFd",
             price:"5550",
             category:"hiking"
+        },
+        {
+            title:"OwnTheGame",
+            brand:"adidas",
+            imgUrl:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0549bb8f67024322ba7fad1a00a379b0_9366/Ownthegame_Shoes_Black_H00471_04_standard.jpg",
+            price:"6599",
+            category:"running"
+        },
+        {
+            title:"Zoom Fly 5",
+            brand:"Nike",
+            imgUrl:"https://static.nike.com/a/images/t_default/f07c8068-3696-4127-ad95-f7d9f71b21e4/zoom-fly-5-road-running-shoes-lkx7Zp.png",
+            price:"5000",
+            category:"running"
+        },
+        {
+            title:"petronas",
+            brand:"Nike",
+            imgUrl:"https://static.nike.com/a/images/t_default/fa6683fc-ea90-4ffe-baa5-cd3d4ae60173/dunk-high-shoes-4TXtvT.png",
+            price:"2690",
+            category:"High-Tops"
         }
     ]
     const handleClick=(event)=>{
