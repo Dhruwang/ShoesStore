@@ -1,0 +1,14 @@
+@media screen and (min-width:481px) {
+    .homeImg {
+        background-image:url(../Images/cover.jpg);
+        height: 100vh;
+        background-size: cover;
+    }
+}
+@media screen and (max-width:750px) {
+    .homeImg {
+        background-image:url(../Images/cover-sm.jpg);
+        height: 100vh;
+        background-size: cover;
+    }
+}

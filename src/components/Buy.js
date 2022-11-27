@@ -4,8 +4,8 @@ import shoeIcon from '../Images/shoe-icon.png'
 import Cards from './Cards'
 import "../App.css"
 
-export default function Buy() {
-    const [shoesCategory, setshoesCategory] = useState("")
+export default function Buy(props) {
+    const [shoesCategory, setshoesCategory] = useState("all")
     const shoeArr = [
         {
             title: "Fuse 2.0",
@@ -79,10 +79,12 @@ export default function Buy() {
         }
     ]
     const handleClick=(event)=>{
+        props.setProgress(30)
         setshoesCategory(event.target.id)
+        props.setProgress(100)
     }
     return (
-        <div className="row py-4 " style={{
+        <div className="row py-4 " id="buy" style={{
             backgroundImage: `url(${cover})`, height: "100vh", backgroundSize: 'cover',overflowY:"auto"
         }}>
             <div className='container bg-dark w-75 py-4 px-4 col-sm-12' style={{ opacity: "1"}}>
@@ -95,9 +97,10 @@ export default function Buy() {
                     <button type="button" id = "old_Skool" class="btn btn-light mx-2 my-2"  onClick={handleClick}>Old Skool</button>
                     <button type="button" id = "High-Tops" class="btn btn-light mx-2 my-2"  onClick={handleClick}>High-Tops</button>
                 </div>
+                <h3 className='text-center text-light mb-2'>Showing results for {shoesCategory}</h3>
                 <div className="shoeCards row">
                     
-                    {shoesCategory===""?(shoeArr.map((shoes) => (
+                    {shoesCategory==="all"?(shoeArr.map((shoes) => (
                         <div className='individualCards col-md-3 col-sm-6'>
                             <Cards title={shoes.title} brand={shoes.brand} imgUrl={shoes.imgUrl} price={shoes.price} />
                         </div>

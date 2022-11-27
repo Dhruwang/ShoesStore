@@ -1,6 +1,6 @@
 import React from 'react'
-
-export default function Navbar() {
+import {Link} from 'react-scroll'
+export default function Navbar(props) {
     return (
         <>
             <nav className="navbar navbar-expand-lg px-4" >
@@ -12,16 +12,13 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-auto fs-6">
                             <li className="nav-item">
-                                <a className="nav-link text-light" aria-current="page" href="/">Home</a>
+                                <Link className="nav-link text-light" role="button" spy={true} smooth={true} offset={0} duration={500} to="home">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-light" href="/">Features</a>
+                                <Link className="nav-link text-light" role="button" spy={true} smooth={true} offset={10} duration={100} to="about">About</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-light" href="/">Pricing</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-light" href="/" >Disabled</a>
+                                <Link className="nav-link text-light" role="button" spy={true} smooth={true} offset={50} duration={500} to="buy">Buy</Link>
                             </li>
                         </ul>
                     </div>
